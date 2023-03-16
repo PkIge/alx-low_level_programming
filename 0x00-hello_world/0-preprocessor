@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+CFILE=$CFILE
+
+
+OUTPUT=c
+
+
+cpp -C $CFILE -o $OUTPUT
+
+
+echo "Preprocessed $CFILE into $OUTPUT"

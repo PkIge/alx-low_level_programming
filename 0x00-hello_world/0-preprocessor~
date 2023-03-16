@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the C file name from the environment variable
+CFILE=$CFILE
+
+# Define the output file name
+OUTPUT=c
+
+# Run the preprocessor and save the result into the output file
+cpp -C $CFILE -o $OUTPUT
+
+# Print a message to confirm that the operation is done
+echo "Preprocessed $CFILE into $OUTPUT"
